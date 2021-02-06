@@ -1,0 +1,40 @@
+{
+  "name": "personalWebsite",
+  "version": "1.0.0",
+  "description": "Derek's personal website",
+  "main": "app.js",
+  "scripts": {
+    "test:int": "mocha test/integration --timeout 5000 --exit",
+    "test:unit": "mocha test/unit --timeout 5000 --exit",
+    "test": "mocha --recursive --timeout 5000 --exit",
+    "coverage": "nyc -x models -x **/*.test.js npm run test",
+    "coverage:int": "nyc -x models -x **/*.test.js npm run test:int",
+    "coverage:unit": "nyc -x models -x **/*.test.js npm run test:unit",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://BigHeadTodd@bitbucket.org/BigHeadTodd/personalwebsiterepo.git"
+  },
+  "author": "Derek Frahm",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/BigHeadTodd/personalwebsiterepo#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.0",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-pug": "^1.2.3",
+    "mocha": "^8.2.1",
+    "mock-req-res": "^1.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4",
+    "sinon-chai": "^3.5.0",
+    "sinon-test": "^3.0.0"
+  }
+}
