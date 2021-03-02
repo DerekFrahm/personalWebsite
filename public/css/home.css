@@ -1,0 +1,9 @@
+#me {
+    max-height: 10vw;
+    display: flex;
+    margin: 0 auto;
+}
+
+#content h1, p{
+    color: antiquewhite;
+}
