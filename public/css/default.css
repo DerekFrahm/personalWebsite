@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    --headerColor: antiquewhite;
+    --textColor: antiquewhite;
     --font-family: "Arial";
     --chSize: 12vh;
     font-family: var(--font-family);
@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(1, 3, 26);
+    color: var(--textColor);
 
     background-image: url(/images/midground.png), url(/images/c&h.png), url(/images/grass.svg), url(/images/space.jpg);
     background-size: auto, var(--chSize), cover, cover;
@@ -33,9 +34,6 @@ header {
     display: grid;
     padding: .75em;
     border-bottom: solid rgb(46, 46, 46);
-    background-color: rgba(80, 80, 80, 0.3);
-	-webkit-backdrop-filter: blur(2px);
-	backdrop-filter: blur(2px);
 }
 
 header h1 {
@@ -43,7 +41,6 @@ header h1 {
     margin: auto auto auto .5em;
     grid-row: 1;
     grid-column: 1;
-    color: var(--headerColor);
 }
 
 nav {
@@ -65,12 +62,25 @@ header a:hover {
 }
 
 .active {
-    border-bottom: solid var(--headerColor);
+    border-bottom: solid var(--textColor);
 }
 
 #content {
-    margin: 2em 1em calc(var(--chSize) + 5vh);
+    margin: 3vh 2vw calc(var(--chSize) + 8vh);
     flex: 1 0 auto;
+}
+
+.blurBackground {
+    background-color: rgba(80, 80, 80, 0.3);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+}
+
+.textBox {
+    padding: 1vh 1vw;
+    width: 70vw;
+    margin: auto;
+    line-height: 1.8em;
 }
 
 @keyframes STAR-MOVE {
