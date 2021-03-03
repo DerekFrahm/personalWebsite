@@ -4,5 +4,7 @@ const {Router} = require('express'),
 
 router.route('/')
     .get(controller.getHome)
+router.route('/resume')
+    .get(controller.getResume)
 
 module.exports = router
