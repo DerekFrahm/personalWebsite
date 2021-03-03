@@ -6,5 +6,7 @@ router.route('/')
     .get(controller.getHome)
 router.route('/resume')
     .get(controller.getResume)
+router.route('/contact')
+    .get(controller.getContact)
 
 module.exports = router
