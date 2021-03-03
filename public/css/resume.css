@@ -1,0 +1,46 @@
+#resume {
+    display: grid;
+    grid-template-columns: 30vw 45vw;
+    grid-template-areas: 
+        "skills exp"
+        "education exp"
+        "references exp";
+    column-gap: 3vw;
+}
+
+#keySkills {
+    grid-area: skills;
+}
+
+#education {
+    grid-area: education;
+}
+
+#relevantExperience {
+    grid-area: exp;
+}
+
+#References {
+    grid-area: references;
+}
+
+.sectionTitle {
+    text-decoration: underline;
+}
+
+.section > h3, h4 {
+    margin: 0;
+}
+
+.textBox {
+    padding: 2vh 2vw;
+    width: 80vw;
+}
+
+li {
+    margin: 1vh 0;
+}
+
+.section > h3, h4, ul, p {
+    margin-left: .5vw;
+}

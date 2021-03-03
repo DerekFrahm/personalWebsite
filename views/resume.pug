@@ -1,6 +1,82 @@
 extends layout 
 block append style 
-            link(rel='stylesheet' href='/css/resume.css')
+    link(rel="stylesheet", href="/css/resume.css")
+    link(rel='stylesheet' media='screen and (max-width: 900px), screen and (max-device-width: 900px)' href='/css/resumeSmall.css')
+
 block append content
-    .blurBackground
-        p Resume Page
+    #resume.blurBackground.textBox
+        #keySkills.section
+            h2.sectionTitle Key Skills
+            ul
+                li Node.js
+                li Pug & CSS 
+                li SQL & Stored Procedures
+                li jQuery & JSON
+                li Mocha & Chai
+                li Cypress & Postman
+                li Bitbucket & Git
+                li Java (OOD)
+                li Python
+                li Agile and Scrum
+                li Commitment to quality
+                li Team & detailed oriented 
+                li Passion for learning
+                li Flexible and quickly adapt
+        #education.section
+            h2.sectionTitle Education 
+            h3 Computer Science B.S. & Applied Math B.S.
+            h4 Furman University, 2017-2021
+            ul
+                li GPA 3.316
+                li Dean's List Fall of 2018, Fall of 2019, Spring 2020
+            h3 History & English Class 
+            h4 University of Maryland Global Campus, Summer 2020
+            ul 
+                li GPA 3.5
+                li Took two classes at UMGC to keep my degree on track while working full-time at BMW 
+        #relevantExperience.section
+            h2.sectionTitle Relevant Experience
+            h3 Full-Stack Developer Co-op 
+            h4 BMW Group, May 2020 - December 2020
+            ul 
+                li Digital Services' Dashboard - Dynamically pulls apps from database to show an app’s 
+                    | URL, documentation, user manual, and audit log - can also modify app’s user roles and 
+                    | release notes. 
+                li Test Automation Portal - Each user is assigned their own set of test cases. The user
+                    | can then go to this app and pick a specific test they want to run. Uses a shell script 
+                    | to pull Cypress test scripts from Bitbucket, runs the test, then stores the result in 
+                    | a database and displays it on the frontend.
+                li App Service - API that is used to handle database interactions for our mobile app. 
+                    | Written with test driven development with Postman tests to ensure the new Node version 
+                    | matches the old Java version.
+                li Visitor's Log - Stores sign in and sign out information of people visiting the office.
+                li Major Incident Management - App to keep track of IT issues/outages. I added new features and 
+                    | pages as requested by our end users.
+                li Gift Scan - App for BMW's turkey and ham handout. I adjusted CSS and patched a double entry bug. 
+                li IoT - App that streamlines the process of IT adding new devices to the network and assigning IPs.
+                    | I added a table that shows available IPs along with autocomplete and validation of IPs and subnets. 
+                li Found opportunities to improve our team’s workflow and efficiency and wrote the 
+                    | Dashboard app to fulfill those needs in an easy to scale manner. Also suggested 
+                    | and made improvements to apps on my own initiative.
+                li Communicate my applications’ workflow and functionality in documentation both in 
+                    | detail for other developers and in layman’s terms for our end-users.
+                li Work as a team to make sure applications fulfill our end-users’ desired functionality 
+                    | and ensure the applications are of high-quality.
+                li Write new applications, rewrite old PHP/Java applications to Node.js, and make modifications/add features 
+                    | to Node.JS apps and Cypress tests written by previous developers.
+                li Attend daily stand up, bi-weekly dev meeting, and bi-weekly sprint planning to convey progress, roadblocks, 
+                    | and accomplishments to team members.
+                li Complete code reviews for other team members.
+                li Alternated weeks working from home and working in-office.
+            h3 Classwork 
+            h4 Java 
+            ul 
+                li Mazerunner - A program that solves a maze from a text file. I then implemented an interactive user interface 
+                    |in JavaFX with animations to solve a maze of the user’s choosing and show the path taken.
+            h4 Python 
+            ul 
+                li Coded DFS, BFS, Dijkstra's algorithm, and minimax
+                li Data-driven histogram construction (independent of the Python histogram module)
+        #References.section
+            h2.sectionTitle References 
+            p.sectionDetails Available Upon Request

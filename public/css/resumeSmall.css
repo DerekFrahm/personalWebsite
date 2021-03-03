@@ -1,0 +1,25 @@
+#resume {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "exp"
+        "skills"
+        "education"
+        "references";
+}
+
+#relevantExperience {
+    grid-area: exp;
+}
+
+#keySkills {
+    grid-area: skills;
+}
+
+#education {
+    grid-area: education;
+}
+
+#References {
+    grid-area: references;
+}
